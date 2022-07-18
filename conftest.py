@@ -11,7 +11,7 @@ hookspec = HookspecMarker("pytest")
 # CT = time.time()
 def gen_image_name():
     for i in range(1, 1000):
-        return "TestCase" + str(random.randint(1,10000))
+        return "TestCase" + str(random.randint(1, 10000))
 
 
 def pytest_sessionfinish():
@@ -23,6 +23,7 @@ def pytest_sessionfinish():
             pass
         else:
             os.mkdir("reports/images")
+
 
 def pytest_runtest_teardown(item):
     node = item.obj

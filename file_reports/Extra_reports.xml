@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.095" timestamp="2022-07-18T15:55:38.436316" hostname="DESKTOP-CTCCQ2D"><testcase classname="tests.Test_extra_main_page.Test_Main_page" name="test_check_header_text" time="1.045"><failure message="pytest_assume.plugin.FailedAssumption: &#10;2 Failed Assumptions:&#10;&#10;Test_extra_main_page.py:48: AssumptionFailure&#10;&gt;&gt;&#09;with assume: assert cart_icon_text.text == &quot;კალათა&quot;&#10;AssertionError: assert 'შენახული' == 'კალათა'&#10;  - კალათა&#10;  + შენახული&#10;&#10;Test_extra_main_page.py:50: AssumptionFailure&#10;&gt;&gt;&#09;with assume: assert heart_icon_text == 'შენახული '&#10;AssertionError: assert &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a6cb7c4534df7334a8b3d5486b9c880a&quot;, element=&quot;fa138bd5-f3d0-41f4-aad0-4d07423211b4&quot;)&gt; == 'შენახული '">E   pytest_assume.plugin.FailedAssumption: 
+    2 Failed Assumptions:
+    
+    Test_extra_main_page.py:48: AssumptionFailure
+    &gt;&gt;	with assume: assert cart_icon_text.text == "კალათა"
+    AssertionError: assert 'შენახული' == 'კალათა'
+      - კალათა
+      + შენახული
+    
+    Test_extra_main_page.py:50: AssumptionFailure
+    &gt;&gt;	with assume: assert heart_icon_text == 'შენახული '
+    AssertionError: assert &lt;selenium.webdriver.remote.webelement.WebElement (session="a6cb7c4534df7334a8b3d5486b9c880a", element="fa138bd5-f3d0-41f4-aad0-4d07423211b4")&gt; == 'შენახული '</failure></testcase></testsuite></testsuites>

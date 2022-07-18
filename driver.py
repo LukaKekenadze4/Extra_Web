@@ -14,3 +14,4 @@ class Driver:
     # driver.set_window_size(1440, 768)
     driver.get("https://extra.ge/")
     driver.implicitly_wait(10)
+    print("Driver initialized. {a}".format(a=driver.title))
