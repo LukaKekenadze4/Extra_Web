@@ -34,4 +34,6 @@ class MainPageLocator:
     banner_xpath = (By.XPATH,
                     '/html/body/app-root/div[1]/ng-component/div[1]/app-hero-slider/div[1]/div[2]/div/swiper/div/div[12]/a/div/picture/img')
 
-    add_to_cart_button = (By.XPATH, '//*[@id="swiper-wrapper-ec106a7eba1e804ed"]/div[2]/app-product-card/div/button')
+    day_offer_xpath = (By.XPATH, '/html/body/app-root/div[1]/ng-component/div[2]/app-home-page-products-carousel[1]/div/app-product-slider')
+
+    add_to_cart_button = (By.XPATH, '/html/body/app-root/div[1]/ng-component/div[2]/app-home-page-products-carousel[1]/div/app-product-slider/swiper/div/div[4]/app-product-card/div/button')

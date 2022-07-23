@@ -75,9 +75,12 @@ class Test_Main_page:
         with assume: assert 'Soskin | Extra' in Driver.driver.title
         Driver.driver.back()
 
-    def test_click_cart_icon(self):
-        add_to_cart_button = MP.click_cart_icon()
-        # y = add_to_cart_button.rect()['y']
-        # Driver.driver.execute_script("window.scrollTo(0, {})".format(y))
-        add_to_cart_button.click()
-        # with assume: assert add_to_cart_button[1].text == 'კალათაში დამატება'
+    def test_scroll_to_day_offer(self):
+        day_offer_ = MP.scroll_to_day_offer().rect
+        y = day_offer_['y']
+        Driver.driver.execute_script("window.scrollTo(0, {})".format(y))
+
+    def test_add_to_cart(self):
+        add_cart = MP.add_to_cart()
+        add_cart.click()
+

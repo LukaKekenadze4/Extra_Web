@@ -67,7 +67,10 @@ class MainPage(BP):
         banner = BP.find_element(self, MPL.banner_xpath)
         return banner
 
-    def click_cart_icon(self):
-        cart_button = BP.find_element(self, MPL.add_to_cart_button)
-        return cart_button
+    def scroll_to_day_offer(self):
+        day_offer = BP.find_element(self, MPL.day_offer_xpath)
+        return day_offer
 
+    def add_to_cart(self):
+        add = BP.find_element(self, MPL.add_to_cart_button)
+        return add
